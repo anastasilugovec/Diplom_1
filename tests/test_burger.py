@@ -1,4 +1,4 @@
-# tests/test_burger.py
+
 import pytest
 from unittest.mock import Mock
 
@@ -7,7 +7,6 @@ from unittest.mock import Mock
 # используйте: from burger import Burger
 from burger import Burger
 
-# Вспомог: создаём фиктивные Bun и Ingredient с нужным интерфейсом
 def make_mock_bun(name="Sesame Bun", price=3.0):
     bun = Mock()
     bun.get_name.return_value = name
@@ -49,7 +48,7 @@ def test_set_bun_and_add_ingredients_and_price():
     burg.add_ingredient(ing1)
     burg.add_ingredient(ing2)
 
-    # Цена: bun*2 + ингредиенты
+
     expected_price = bun.get_price.return_value * 2 + ing1.get_price.return_value + ing2.get_price.return_value
     assert burg.get_price() == expected_price
 
@@ -63,7 +62,7 @@ def test_move_and_remove_ingredients_order():
     burg.add_ingredient(ing_b)
     burg.add_ingredient(ing_c)
 
-    # начальная последовательность: [A, B, C]
+
     burg.move_ingredient(0, 2)  # A -> позиция 2 -> [B, C, A]
     assert burg.ingredients[0] is ing_b
     assert burg.ingredients[1] is ing_c
@@ -87,6 +86,6 @@ def test_receipt_format_includes_bun_and_ingredients(burger=None):
     assert f"= {str(ing1.get_type()).lower()} {ing1.get_name()} =" in receipt
     assert f"= {str(ing2.get_type()).lower()} {ing2.get_name()} =" in receipt
     assert f"(==== {bun.get_name()} ====)" in receipt
-    # Цена должна быть рассчитана корректно
+
     expected_price = bun.get_price.return_value * 2 + ing1.get_price.return_value + ing2.get_price.return_value
     assert f"Price: {expected_price}" in receipt
