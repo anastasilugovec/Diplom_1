@@ -1,8 +1,8 @@
 from typing import List
 
-from praktikum import Bun
-from praktikum import Ingredient
-from praktikum import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
+from praktikum.praktikum import Bun
+from praktikum.praktikum import Ingredient
+from praktikum.praktikum import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
 
 class Database:
