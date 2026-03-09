@@ -1,3 +1,6 @@
+import pytest
+
+
 def test_price_without_ingredients(burger, mock_bun):
     burger.set_buns(mock_bun)
     assert burger.get_price() == mock_bun.get_price.return_value * 2
