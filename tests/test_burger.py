@@ -21,3 +21,27 @@ def test_receipt_format_includes_bun_and_ingredients(burger, mock_bun, mock_ingr
     assert f"(==== {mock_bun.get_name()} ====)" in receipt
     assert f"= {str(mock_ingredient.get_type()).lower()} {mock_ingredient.get_name()}" in receipt
     assert f"Price: {burger.get_price()}" in receipt
+
+
+def test_clear_ingredients(burger, mock_ingredient):
+    burger.add_ingredient(mock_ingredient)
+    burger.clear_ingredients()
+    assert burger.ingredients == []
+
+
+def test_get_ingredients_returns_list(burger, mock_ingredient):
+    burger.add_ingredient(mock_ingredient)
+    ingredients = burger.get_ingredients()
+    assert isinstance(ingredients, list)
+    assert mock_ingredient in ingredients
+
+
+def test_move_ingredient_invalid_index(burger):
+    # Передача неправильного индекса
+    with pytest.raises(IndexError):
+        burger.move_ingredient(0, 10)
+
+
+def test_remove_ingredient_invalid_index(burger):
+    # Удаление по неправильному индексу
+    burger.remove_ingredient(999)

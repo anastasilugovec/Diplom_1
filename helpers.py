@@ -1,4 +1,3 @@
-# helpers.py
 from unittest.mock import Mock
 
 def make_mock_bun(name="Sesame Bun", price=3.0):
