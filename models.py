@@ -57,3 +57,6 @@ class Burger:
         lines.append(f"(==== {self.bun.get_name()} ====)")
         lines.append(f"Price: {self.get_price()}")
         return "\n".join(lines)
+
+    def clear_ingredients(self):
+        self.ingredients = []
