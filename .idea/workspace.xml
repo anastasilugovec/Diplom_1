@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="681ced86-279a-4b27-a588-46175a4cf59e" name="Changes" comment="внесены исправления2" />
+    <list default="true" id="681ced86-279a-4b27-a588-46175a4cf59e" name="Changes" comment="внесены исправления-3">
+      <change beforePath="$PROJECT_DIR$/.idea/Diplom_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_burger.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_burger.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,10 +44,20 @@
     &quot;Python tests.Python tests for tests.test_burger.TestBurger.test_get_price_calculation.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_burger.TestBurger.test_receipt_lowercase_types.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_burger.test_burger_add_ingredient.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_burger.test_clear_ingredients.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_burger.test_move_and_remove_ingredients_order.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_burger.test_receipt_format_includes_bun_and_ingredients.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_burger.test_set_bun_and_add_ingredients_and_price.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_burger.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.TestBurger.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.TestBurger.test_get_receipt_includes_bun_and_ingredients.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.TestBurger.test_move_ingredient_valid_indices.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_clear_ingredients.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_get_price_with_single_ingredient.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_get_price_without_ingredients_and_bun.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_get_receipt_includes_bun_and_ingredients.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_move_ingredient_invalid_index.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests.test_burger.test_move_ingredient_valid_indices.executor&quot;: &quot;Run&quot;,
     &quot;Python.praktikum.executor&quot;: &quot;Run&quot;,
     &quot;Python.test_burger.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -57,30 +75,8 @@
       <recent name="C:\Users\Rus\PycharmProjects\Diplom\Diplom_1\practikum" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_burger.test_set_bun_and_add_ingredients_and_price">
-    <configuration name="test_burger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_burger.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_burger.test_move_and_remove_ingredients_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for tests.test_burger.TestBurger.test_get_price_with_single_ingredient">
+    <configuration name="pytest for tests.test_burger.TestBurger" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,12 +86,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_burger.test_move_and_remove_ingredients_order&quot;" />
+      <option name="_new_target" value="&quot;tests.test_burger.TestBurger&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_burger.test_receipt_format_includes_bun_and_ingredients" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_burger.TestBurger.test_get_price_with_single_ingredient" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,12 +103,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_burger.test_receipt_format_includes_bun_and_ingredients&quot;" />
+      <option name="_new_target" value="&quot;tests.test_burger.TestBurger.test_get_price_with_single_ingredient&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_burger.test_set_bun_and_add_ingredients_and_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_burger.TestBurger.test_get_receipt_includes_bun_and_ingredients" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,12 +120,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_burger.test_set_bun_and_add_ingredients_and_price&quot;" />
+      <option name="_new_target" value="&quot;tests.test_burger.TestBurger.test_get_receipt_includes_bun_and_ingredients&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_burger.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_burger.TestBurger.test_move_ingredient_valid_indices" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,18 +137,37 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_burger.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;tests.test_burger.TestBurger.test_move_ingredient_valid_indices&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for tests.test_burger.test_clear_ingredients" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_burger.test_clear_ingredients&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_burger.test_set_bun_and_add_ingredients_and_price" />
-        <item itemvalue="Python.test_burger" />
-        <item itemvalue="Python tests.Python tests for tests.test_burger.test_receipt_format_includes_bun_and_ingredients" />
-        <item itemvalue="Python tests.Python tests in test_burger.py" />
-        <item itemvalue="Python tests.Python tests for tests.test_burger.test_move_and_remove_ingredients_order" />
+        <item itemvalue="Python tests.pytest for tests.test_burger.TestBurger.test_get_price_with_single_ingredient" />
+        <item itemvalue="Python tests.pytest for tests.test_burger.TestBurger" />
+        <item itemvalue="Python tests.pytest for tests.test_burger.TestBurger.test_get_receipt_includes_bun_and_ingredients" />
+        <item itemvalue="Python tests.pytest for tests.test_burger.TestBurger.test_move_ingredient_valid_indices" />
+        <item itemvalue="Python tests.pytest for tests.test_burger.test_clear_ingredients" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +282,39 @@
       <option name="project" value="LOCAL" />
       <updated>1773055781339</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="внесены исправления2">
+      <option name="closed" value="true" />
+      <created>1773093261825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1773093261825</updated>
+    </task>
+    <task id="LOCAL-00014" summary="внесены исправления2">
+      <option name="closed" value="true" />
+      <created>1773093537517</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1773093537517</updated>
+    </task>
+    <task id="LOCAL-00015" summary="внесены исправления-3">
+      <option name="closed" value="true" />
+      <created>1773502358759</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773502358759</updated>
+    </task>
+    <task id="LOCAL-00016" summary="внесены исправления-3">
+      <option name="closed" value="true" />
+      <created>1773502368026</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773502368026</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +332,7 @@
     <MESSAGE value="задание 1" />
     <MESSAGE value="внесены исправления" />
     <MESSAGE value="внесены исправления2" />
-    <option name="LAST_COMMIT_MESSAGE" value="внесены исправления2" />
+    <MESSAGE value="внесены исправления-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="внесены исправления-3" />
   </component>
 </project>
